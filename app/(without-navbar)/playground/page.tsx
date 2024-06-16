@@ -11,7 +11,7 @@ import NavBar from './Navbar';
 export default function Playground()
 {
   const [language, setLanguage] = useState('python');
-  const handleLanguageChange = (e) => {
+  const handleLanguageChange = (e: any) => {
     setLanguage(e.target.value);
   }
   return (
