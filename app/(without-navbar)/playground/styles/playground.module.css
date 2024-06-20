@@ -4,12 +4,13 @@
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
 }
 
 .playGround {
   background-color: black;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 3fr;
   gap: 10px;
   height: 100vh;
 }
@@ -18,7 +19,7 @@
   border: 1px solid rgba(83, 83, 83, 0.4);
   border-radius: 6px;
   display: grid;
-  grid-template-columns: 1fr 8fr;
+  grid-template-columns: 1fr 7fr;
 }
 
 .sideBar {
@@ -34,7 +35,7 @@
 }
 
 .q {
-  margin-top: 18px;
+  margin-top: 15px;
   color: grey;
   font-size: 11px;
   font-weight: bold;
@@ -52,18 +53,20 @@
   border: 0.3px solid darkgreen;
   background-color: rgba(19, 71, 19, 0.802);
   color: rgb(91, 161, 91);
-  padding: 2px 5px;
+  padding: 2px 6px;
   font-size: 11px;
   border-radius: 8px;
 }
 
 .logo {
-  height: 20px;
+  color: white;
+  height: 22px;
   margin-top: 15px;
   margin-left: 15px;
 }
 
 .levelDiv {
+  margin-top: 15px;
   display: flex;
   align-items: center;
 }
@@ -72,13 +75,14 @@
   color: white;
   font-size: 13px;
   font-weight: bold;
+  display: flex;
 }
 
 .solutionArea {
   border: 0.5px solid rgba(83, 83, 83, 0.4);
   border-radius: 6px;
   display: grid;
-  grid-template-rows: 7fr 3fr;
+  grid-template-rows: 5fr 2fr;
 }
 
 .solutionAreaPart1 {
@@ -90,9 +94,19 @@
   border-radius: 3px;
 }
 
+.solutionAreaPart2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(12, 12, 12);
+  border: 0.5px solid rgba(83, 83, 83, 0.4);
+  border-radius: 4px;
+}
+
 .refreshBtn {
-  height: 25px;
-  width: 25px;
+  color: aliceblue;
+  height: 1rem;
+  width: 1rem;
   border-radius: 13px;
   margin-right: 15px;
 }
@@ -121,6 +135,7 @@
 
 .resultHeadings {
   display: flex;
+  align-items: center;
   justify-content: flex-start;
   gap: 10px;
   border: 0.5px solid rgba(83, 83, 83, 0.4);
@@ -128,8 +143,9 @@
 }
 
 .closeBtn {
+  position: relative;
+  top: 1px;
   color: grey;
-  margin-top: 0;
   margin-left: 15px;
   font-size: 20px;
   font-weight: bold;
@@ -137,8 +153,11 @@
 }
 
 .jn {
+  position: relative;
+  top: 5px;
+  padding: 5px 2px;
   color: grey;
   font-size: 12px;
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
