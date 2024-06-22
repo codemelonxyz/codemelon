@@ -1,8 +1,9 @@
 "use client"
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FaQuora } from 'react-icons/fa6';
 import styles from './styles/playground.module.css';
 import { CgNotes } from "react-icons/cg";
 import { FiRefreshCcw } from "react-icons/fi";
-import { PiLetterCirclePLight } from "react-icons/pi";
 import Editor from '@monaco-editor/react';
 import { useState } from 'react';
 import NavBar from './Navbar';
@@ -18,7 +19,7 @@ export default function Playground()
       <div className={styles.playGround}>
       <div className={styles.questionArea}>
         <div className={styles.sideBar}>
-          <PiLetterCirclePLight className = {styles.logo} />
+          <FaQuora className = {styles.logo}/>
           <CgNotes  className = {styles.logo} />
         </div>
         <div className={styles.question}>
@@ -40,10 +41,10 @@ export default function Playground()
                 <option value="javascript">JavaScript (Node.js 18.15.0)</option>
                 <option value="java">Java (OpenJDK 13.0.1)</option>
               </select>
-              <FiRefreshCcw className = {styles.refreshBtn}/>
+              <FiRefreshCcw className = {styles.refreshBtn} />
             </div>
             <div className={styles.solutionAreaPart2}>
-              <Editor height = "64.7vh" width = "100%" language={language} theme = "vs-dark"/>
+              <Editor language={language} theme = "vs-dark" options={{minimap: {enabled: false}}} />
             </div>
         </div>
         <div className={styles.resultArea}>
@@ -56,7 +57,11 @@ export default function Playground()
             <p className={styles.jn}>ERROR</p>
             <p className={styles.jn}>|</p>
           </div>
-          <div></div>
+          <div className = {styles.inputOuputContainer}>
+            <Editor language={language} theme = "vs-dark" options={{quickSuggestions: false, readOnly: false, minimap: {
+                enabled: false,
+              },}}/>
+          </div>
         </div>
       </div>
     </div>

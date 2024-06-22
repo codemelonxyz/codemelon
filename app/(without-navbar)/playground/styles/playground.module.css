@@ -1,10 +1,13 @@
 .container {
-  position: sticky;
+  position: fixed;
   top: 0;
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+
 }
 
 .playGround {
@@ -12,7 +15,7 @@
   display: grid;
   grid-template-columns: 1fr 3fr;
   gap: 10px;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .questionArea {
@@ -59,9 +62,9 @@
 }
 
 .logo {
-  color: white;
-  height: 22px;
-  margin-top: 15px;
+  color: rgb(194, 194, 194);
+  height: 15px;
+  margin-top: 18px;
   margin-left: 15px;
 }
 
@@ -82,7 +85,7 @@
   border: 0.5px solid rgba(83, 83, 83, 0.4);
   border-radius: 6px;
   display: grid;
-  grid-template-rows: 5fr 2fr;
+  grid-template-rows: 4fr 2fr;
 }
 
 .solutionAreaPart1 {
@@ -100,6 +103,8 @@
   align-items: center;
   background-color: rgb(12, 12, 12);
   border: 0.5px solid rgba(83, 83, 83, 0.4);
+  height: 65vh;
+  /* width: 100%; */
   border-radius: 4px;
 }
 
@@ -160,4 +165,9 @@
   font-size: 12px;
   font-weight: bold;
   margin-bottom: 10px;
+}
+
+.inputOuputContainer {
+  height: 25vh;
+  width: 100%;
 }

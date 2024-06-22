@@ -11,7 +11,7 @@ export const metadata = {
     return (
       <html lang="en">
         <body>
-          <h1>Nothing</h1>
+          {/* <h1>Nothing</h1> */}
           {children}
         </body>
       </html>
