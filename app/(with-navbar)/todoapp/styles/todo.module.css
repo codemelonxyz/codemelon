@@ -1,15 +1,24 @@
 .todoContainer {
   margin: auto;
-  height: 98vh;
+  min-height: 98vh;
+  height: 100%;
   width: 98vw;
+  color: #3b3b3b;
   background-color: rgb(236, 236, 236);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.dark {
+  color: #3498db;
+  background-color: black;
+  margin: 0;
+  min-height: 100vh;
+  width: 100vw;
 }
 
 .heading {
   padding-top: 20px;
   text-align: center;
-  color: #3b3b3b;
 }
 
 .inputTaskContainer {
@@ -27,6 +36,10 @@
   font-size: 15px;
   color: blue;
   margin-right: 10px;
+}
+
+.darkInput {
+  background-color: #262626;
 }
 
 .inputContainer::placeholder {
@@ -73,9 +86,12 @@
   font-size: 15px;
 }
 
+.darkSelect {
+  background-color: #262626;
+  color: #b2b2b2;
+}
+
 .completedBtn {
-  /* position: relative;
-  top: 4px; */
   background-color: rgb(164, 87, 232);
   color: white;
   border-radius: 5px;
@@ -91,8 +107,6 @@
 }
 
 .searchInputContainer {
-  /* position: relative;
-  top: -5px; */
   margin-top: 0;
   height: 4vh;
   width: 30vw;
@@ -103,6 +117,10 @@
   font-size: 15px;
   color: blue;
   margin-right: 10px;
+}
+
+.darkSearchInput {
+  background-color: #262626;
 }
 
 .searchTaskBtn {
@@ -119,7 +137,7 @@
 
 .tasksList li::marker {
   color: #6e6e6e;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .taskInfoContainer {
@@ -131,8 +149,6 @@
 }
 
 .deleteTaskBtn {
-  /* position: relative;
-  top: 4px; */
   background-color: rgb(243, 36, 36);
   color: white;
   border-radius: 3px;
@@ -148,8 +164,6 @@
 }
 
 .markTaskBtn {
-  /* position: relative;
-  top: 4px; */
   background-color: rgb(39, 174, 18);
   color: white;
   border-radius: 3px;
@@ -177,4 +191,8 @@
   height: 1px;
   background-color: rgb(201, 201, 201);
   border: none;
+}
+
+.darkHrule {
+  background-color: #6e6e6e;
 }
