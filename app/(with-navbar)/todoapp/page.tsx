@@ -11,7 +11,8 @@ export default function Todo() {
     setTask(e.target.value);
   }
   const handlet = () => {
-    setTaskList([...taskList, task]);
+    if(task !== "") setTaskList([...taskList, task]);
+    else alert("Please enter a valid todo");
     setTask('');
   }
   return (
